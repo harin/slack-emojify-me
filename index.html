@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image classification using MobileNet and p5.js</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Make me a Slack Emoji</h1>
+    <p>
+      Instruction:
+      <ol>
+        <li>Take Screenshot</li>
+        <li>Download Emoji</li>
+        <li>Create custom emoji in Slack <a href="https://slack.com/help/articles/206870177-Add-custom-emoji">tutorial</a></li>
+      </ol>
+    </p>
+    <button id="save">Take Screenshot</button>
+    <button id="download" style="display:none;">Download Emoji</button>
+    <div id="result"></div>
+    <h1>Preview</h1>
+    <div class="slidecontainer">
+      <label>adjust crop: wider</label>
+      <input type="range" min="1" max="100" value="50" class="slider" id="myslider">
+      <label>narrower</label>
+    </div>
+    <script src="bodypix.js"></script>
+  </body>
+</html>
