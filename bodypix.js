@@ -54,6 +54,8 @@ function setup() {
 
   // load up your video
   video = createCapture(VIDEO);
+  // set to make it work with ios and android
+  video.elt.setAttribute("playsinline", "");
   video.hide();
 
   save.addEventListener("click", function (e) {
